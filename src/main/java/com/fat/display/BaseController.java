@@ -19,10 +19,9 @@ public class BaseController {
         return "good";
     }
 
-
     @RequestMapping("/tt")
     String tt() {
-        Map<String, String> map = bm.getBasic();
+        var map = bm.getBasic();
         return map.get("content");
     }
 
